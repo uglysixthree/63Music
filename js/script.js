@@ -38,10 +38,6 @@ card1.addEventListener('mouseout', () => {
     card1img.style.filter = 'blur(0px)';
 });
 
-card1.addEventListener('click', () => {
-    
-});
-
 const card2 = document.getElementById('card-2'); // Исправлено
 const card2h2 = document.getElementById('card-2_h2'); // Исправлено
 const card2img = document.getElementById('card2img');
