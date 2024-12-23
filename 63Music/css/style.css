@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+body::-webkit-scrollbar {
+    width: 8px; /* ������ scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: none; /* ���� ������� */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #7EA5D3; /* ���� ������ */
+    border-radius: 20px; /* ����������� ������ */
+}
+
+body {
+    background: linear-gradient(180deg, #FFFFFF, #AEC2EC);
+    /* font-family: "TikTok Sans Light"; */
+    font-family: "Victor Mono", serif;
+    margin: 0;
+    padding: 0;
+}
+
+.body_img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    opacity: 0.1;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+}
+
+@keyframes showHeader {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    animation-name: showHeader;
+    animation-duration: 5.5s;
+    z-index: 2;
+}
+
+.container {
+    max-width: 965px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container img {
+    width: 70px;
+    height: 70px;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 6px;
+    z-index: 3;
+}
+
+.container a:hover {
+    transition: 0.36s;
+    color: #7EA5D3;
+}
+
+.main_content {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 9px;
+    font-weight: 400;
+    transform: translateY(-10vh);
+    z-index: 1;
+}
+
+@keyframes showLineAnimation {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 45vh;
+    }
+}
+
+.main_content_inner {
+    /* transform: translateY(10vh); */
+    height: 0;
+    width: 100%;
+    padding: 4.3923%;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /*!!!!!*/
+    animation-name: showLineAnimation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.left_content {
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: right;
+    font-size: 3.5rem;
+    text-align: right;
+    
+}
+
+.right_content {
+    border-left: 2px solid black;
+    font-size: 3.25rem;
+    opacity: 0.7;
+}
+
+@keyframes showLeftContent {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes showRightContent {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.left_content p {
+    transform: translateX(100vw);
+    animation-name: showLeftContent;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 1.12, 0.165, 1);
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.right_content p {
+    transform: translateX(-100vw);
+    animation-name: showRightContent;
+    animation-duration: 2.5s;
+    animation-timing-function: cubic-bezier(0.075, 1.12, 0.165, 1);
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+/* services */
+
+.services {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services_h1 {
+    height: 4vh;
+}
+
+.services_h1 h1 {
+    width: 100%;
+    letter-spacing: 8px;
+    color: black;
+    font-family: "Rubik Mono One", serif;
+    font-size: 80px;
+    font-weight: 200;
+}
+
+.cards {
+    height: 97vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    
+    position: relative;
+    top: -15vh;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    animation: cards 5s infinite ease-in-out;
+}
+
+@keyframes cards {
+    0%, 100% { /* ��������� � �������� ������� */
+        transform: translateX(0);
+    }
+
+    50% { /* �������� ����� */
+        transform: translateX(-20px);
+    }
+}
+
+.card-1 {
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    transform: rotate(0deg);
+    overflow: hidden;
+    transition: transform 1s ease;
+    cursor: pointer;
+    box-shadow: #7EA5D3 10px 10px 10px;
+}
+
+.card-2 {
+    margin: 30px;
+    margin-top: 300px;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    transform: rotate(0deg);
+    overflow: hidden;
+    transition: transform 1s ease;
+    cursor: pointer;
+    box-shadow: #7EA5D3 10px 10px 10px;
+}
+
+.card-3 {
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    padding-top: -20vh;
+    transform: rotate(0deg);
+    overflow: hidden;
+    transition: transform 1s ease;
+    cursor: pointer;
+    box-shadow: #7EA5D3 10px 10px 10px;
+}
+
+.card-4 {
+    margin: 30px;
+    margin-top: 300px;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    transform: rotate(0deg);
+    overflow: hidden;
+    transition: transform 1s ease;
+    cursor: pointer;
+    box-shadow: #7EA5D3 10px 10px 10px;
+}
+
+.card1img {
+    width: 360px;
+    height: 200px;
+    filter: blur(0px);
+    transition: all 0.5s ease;
+}
+
+.card2img {
+    width: 360px;
+    height: 200px;
+    filter: blur(0px);
+    transition: all 0.5s ease;
+}
+
+.card3img {
+    width: 360px;
+    height: 200px;
+    filter: blur(0px);
+    transition: all 0.5s ease;
+}
+
+.card4img {
+    width: 360px;
+    height: 200px;
+    filter: blur(0px);
+    transition: all 0.5s ease;
+}
+
+.card-1_text {
+    display: inline;
+    position: absolute;
+    text-align: right;
+    margin-right: 2vh;
+    z-index: 2;
+}
+
+.card-1_text h1 {
+    color: #fff;
+}
+
+.card-1_text h2 {
+    margin-top: 11vh;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.card-2_text {
+    display: inline;
+    position: absolute;
+    text-align: right;
+    margin-right: 2vh;
+    z-index: 2;
+}
+
+.card-2_text h1 {
+    color: #fff;
+}
+
+.card-2_text h2 {
+    margin-top: 11vh;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.card-3_text {
+    display: inline;
+    position: absolute;
+    text-align: right;
+    margin-right: 2vh;
+    z-index: 2;
+}
+
+.card-3_text h1 {
+    color: #fff;
+}
+
+.card-3_text h2 {
+    margin-top: 11vh;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.card-4_text {
+    display: inline;
+    position: absolute;
+    text-align: right;
+    margin-right: 2vh;
+    z-index: 2;
+}
+
+.card-4_text h1 {
+    color: #fff;
+}
+
+.card-4_text h2 {
+    margin-top: 11vh;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/* contact */
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact_text {
+    display: flex;
+    text-align: center;
+    margin-top: -10vh;
+}
+
+.contact_text h1 {
+    letter-spacing: 8px;
+    color: black;
+    font-family: "Rubik Mono One", serif;
+    font-size: 80px;
+    font-weight: 200;
+}
+
+.services_section,
+.contact_section {
+    position: relative;
+    z-index: 1; /* ��� ����� ������ ��������, ����� ������� ��� ���������� */
+}
+
+/* Modals */
+
+.modal1 {
+    opacity: 0;
+}
+
+/* @media all and (max-width: 800px) {
+    .card1 {
+        margin: 0px;
+        margin-top: 300px;
+    }
+    .card2 {
+        margin: 0px;
+        margin-top: 300px;
+    }
+    .card3 {
+        margin: 0px;
+        margin-top: 300px;
+    }
+    .card4 {
+        margin: 0px;
+        margin-top: 300px;
+    }
+} */
