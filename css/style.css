@@ -127,7 +127,10 @@ header {
     justify-content: right;
     font-size: 3.5rem;
     text-align: right;
-    
+    color: #7EA5D3;
+    font-family: "Rubik Mono One", serif;
+    font-size: 80px;
+    font-weight: 200;
 }
 
 .right_content {
@@ -191,9 +194,10 @@ header {
 }
 
 .services_h1 h1 {
-    width: 100%;
+    margin-top: -1vh;
     letter-spacing: 8px;
-    color: black;
+    color: #7EA5D3;
+    opacity: 0.75;
     font-family: "Rubik Mono One", serif;
     font-size: 80px;
     font-weight: 200;
@@ -224,79 +228,89 @@ header {
 
 .card-1 {
     margin: 30px;
+    width: 360px;
+    height: 200px;
     color: #fff;
     display: flex;
     justify-content: right;
+    position: relative;
     transform: rotate(0deg);
     overflow: hidden;
     transition: transform 1s ease;
     cursor: pointer;
     box-shadow: #7EA5D3 10px 10px 10px;
+    transition: all 1s ease;
 }
 
 .card-2 {
     margin: 30px;
+    width: 360px;
+    height: 200px;
     margin-top: 300px;
     color: #fff;
     display: flex;
     justify-content: right;
     transform: rotate(0deg);
     overflow: hidden;
-    transition: transform 1s ease;
     cursor: pointer;
     box-shadow: #7EA5D3 10px 10px 10px;
+    transition: all 1s ease;
 }
 
 .card-3 {
     margin: 30px;
+    width: 360px;
+    height: 200px;
     color: #fff;
     display: flex;
     justify-content: right;
     padding-top: -20vh;
     transform: rotate(0deg);
     overflow: hidden;
-    transition: transform 1s ease;
     cursor: pointer;
     box-shadow: #7EA5D3 10px 10px 10px;
+    transition: all 1s ease;
 }
 
 .card-4 {
     margin: 30px;
+    width: 360px;
+    height: 200px;
     margin-top: 300px;
     color: #fff;
     display: flex;
     justify-content: right;
     transform: rotate(0deg);
     overflow: hidden;
-    transition: transform 1s ease;
     cursor: pointer;
     box-shadow: #7EA5D3 10px 10px 10px;
+    transition: all 1s ease;
 }
 
 .card1img {
-    width: 360px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     filter: blur(0px);
     transition: all 0.5s ease;
 }
 
 .card2img {
-    width: 360px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     filter: blur(0px);
     transition: all 0.5s ease;
 }
 
 .card3img {
-    width: 360px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     filter: blur(0px);
     transition: all 0.5s ease;
 }
 
 .card4img {
-    width: 360px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     filter: blur(0px);
     transition: all 0.5s ease;
 }
@@ -373,13 +387,55 @@ header {
     transition: opacity 1s ease;
 }
 
+/* about us */
+.about-us {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us_text {
+    display: flex;
+    text-align: center;
+    margin-top: -10vh;
+}
+
+.about-us_text h1 {
+    letter-spacing: 8px;
+    color: #7EA5D3;
+    opacity: 0.75;
+    font-family: "Rubik Mono One", serif;
+    font-size: 80px;
+    font-weight: 200;
+}
+
+.about_img {
+    width: 30vw;
+    height: 30vh;
+}
+
+.about_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.about_p {
+    width: 70vw;
+    height: 30vh;
+}
 /* contact */
 .contact {
     width: 100%;
     height: 100vh;
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact_text {
@@ -390,11 +446,13 @@ header {
 
 .contact_text h1 {
     letter-spacing: 8px;
-    color: black;
+    color: #7EA5D3;
+    opacity: 0.75;
     font-family: "Rubik Mono One", serif;
     font-size: 80px;
     font-weight: 200;
 }
+
 
 .services_section,
 .contact_section {
@@ -402,11 +460,123 @@ header {
     z-index: 1; /* ��� ����� ������ ��������, ����� ������� ��� ���������� */
 }
 
+.feedback-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#name {
+    width: 50vw;
+    height: 3vh;
+    margin: 30px;
+    border: none;
+    padding: 15px;
+}
+
+#email{
+    width: 50vw;
+    height: 3vh;
+    margin: 30px;
+    border: none;
+    padding: 15px;
+}
+
+#number {
+    width: 50vw;
+    height: 3vh;
+    margin: 30px;
+    border: none;
+    padding: 15px;
+}
+
+.contact_a {
+    width: 50vw;
+    height: 3vh;
+    margin: 30px;
+    border: none;
+    padding: 15px 15px;
+    background: #fff;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.contact_a:hover {
+    transition: 0.36s;
+    background: #4f5b75;
+    color: #fff;
+}
+
 /* Modals */
 
+/* Скрываем модальное окно по умолчанию */
 .modal1 {
-    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: -1000;
+    animation: fadeIn 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Контейнер содержимого модального окна */
+  .modal-content {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    animation: zoomIn 0.5s;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .full-image {
+    max-width: 100%;
+    max-height: 100%;
 }
+  
+  /* Кнопка закрытия */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close:hover {
+    color: #ff0000;
+  }
 
 /* @media all and (max-width: 800px) {
     .card1 {
