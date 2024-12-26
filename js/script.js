@@ -120,3 +120,16 @@ modal1.addEventListener('click', (e) => {
     modal1.style.display = 'none';
   }
 });
+
+const aboutMI = document.getElementById('about-main_img');
+const aboutMP = document.getElementById('about-main_p');
+
+aboutMI.addEventListener('mouseover', () => {
+    aboutMI.style.width = '55vw';
+    aboutMP.style.width = '25vw';
+});
+
+aboutMI.addEventListener('mouseout', () => {
+    aboutMI.style.width = '50vw';
+    aboutMP.style.width = '30vw';
+});

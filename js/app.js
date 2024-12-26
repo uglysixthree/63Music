@@ -83,4 +83,13 @@ if (ScrollTrigger.isTouch !==1) {
             scrub: true
         }
     })
+
+    gsap.fromTo('.about-main_img', { x: 150, opacity: 0.75 }, {
+        opacity: 1,
+        x: 0,
+        scrollTrigger: {
+            trigger: '.about-main_img',
+            scrub: true
+        }
+    })
 }
