@@ -125,11 +125,11 @@ const aboutMI = document.getElementById('about-main_img');
 const aboutMP = document.getElementById('about-main_p');
 
 aboutMI.addEventListener('mouseover', () => {
-    aboutMI.style.width = '55vw';
-    aboutMP.style.width = '25vw';
+    aboutMI.style.width = '650px';
+    aboutMP.style.width = '250px';
 });
 
 aboutMI.addEventListener('mouseout', () => {
-    aboutMI.style.width = '50vw';
-    aboutMP.style.width = '30vw';
+    aboutMI.style.width = '600px';
+    aboutMP.style.width = '300px';
 });

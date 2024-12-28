@@ -415,35 +415,7 @@ header {
     font-weight: 200;
 }
 
-.about_main {
-    max-width: 85vw;
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    /* justify-items: end; */
-    /* border: 2px solid red; */
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all 0.5s ease;
-}
 
-.about_main_img {
-    width: 50vw;
-    height: 50vh;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-.about_main_p {
-    width: 30vw;
-    height: 30vh; 
-    font-size: 1em;
-    text-align: end;
-    letter-spacing: 5%;
-    transition: all 0.5s ease;
-}
 /* contact */
 .contact {
     width: 100%;
@@ -621,10 +593,6 @@ header {
     padding-left: 1%;
     letter-spacing: 47%;
     line-height: 240%;
-}
-
-.contact_content p {
-
 }
 
 .contact_content .links {
