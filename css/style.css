@@ -423,7 +423,7 @@ header {
 }
 
 
-.services_section,
+.services_section, 
 .contact_section {
     position: relative;
     z-index: 1; /* ��� ����� ������ ��������, ����� ������� ��� ���������� */
