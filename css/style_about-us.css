@@ -14,10 +14,11 @@
    height: 90vh;
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 
 .about-us_content .text_content {
-   width: 30%;
+   width: 40%;
 }
 
 .about-us_content .img_content {
