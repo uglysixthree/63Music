@@ -1,0 +1,146 @@
+/* Main */
+
+main {
+    width: 100%;
+}
+
+@keyframes showHeader {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    animation-name: showHeader;
+    animation-duration: 5.5s;
+    z-index: 2;
+}
+
+.container {
+    max-width: 965px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container img {
+    width: 70px;
+    height: 70px;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 6px;
+    z-index: 3;
+}
+
+.container a:hover {
+    transition: 0.36s;
+    color: #7EA5D3;
+}
+
+.main_content {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 9px;
+    font-weight: 400;
+    transform: translateY(-10vh);
+    z-index: 1;
+}
+
+@keyframes showLineAnimation {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 45vh;
+    }
+}
+
+.main_content_inner {
+    /* transform: translateY(10vh); */
+    height: 0;
+    width: 100%;
+    padding: 4.3923%;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /*!!!!!*/
+    animation-name: showLineAnimation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.left_content {
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: right;
+    font-size: 3.5rem;
+    text-align: right;
+    color: #7EA5D3;
+    font-family: "Rubik Mono One", serif;
+    font-size: 80px;
+    font-weight: 200;
+}
+
+.right_content {
+    border-left: 2px solid black;
+    font-size: 3.25rem;
+    opacity: 0.7;
+}
+
+@keyframes showLeftContent {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes showRightContent {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.left_content p {
+    transform: translateX(100vw);
+    animation-name: showLeftContent;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 1.12, 0.165, 1);
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.right_content p {
+    transform: translateX(-100vw);
+    animation-name: showRightContent;
+    animation-duration: 2.5s;
+    animation-timing-function: cubic-bezier(0.075, 1.12, 0.165, 1);
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
