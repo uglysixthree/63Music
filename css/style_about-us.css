@@ -1,0 +1,29 @@
+/* about us */
+.about-us {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.about-us_content {
+   width: 80vw;
+   height: 90vh;
+   display: flex;
+   justify-content: space-between;
+}
+
+.about-us_content .text_content {
+   width: 30%;
+}
+
+.about-us_content .img_content {
+   width: 50%;
+}
+
+.about-us_content .img_content img {
+   width: 100%;
+}
