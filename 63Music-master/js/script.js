@@ -24,7 +24,7 @@ const card1img = document.getElementById('card1img');
 
 card1.addEventListener('mouseover', () => {
     card1h2.style.opacity = '1'; // Сделать видимым
-    card1.style.transform = 'rotate(4deg)';
+    card1.style.transform = 'rotate(2deg)';
     card1.style.width = '380px';
     card1.style.height = '220px';
     card1img.style.filter = 'blur(2px)';
@@ -46,7 +46,7 @@ const card2img = document.getElementById('card2img');
 
 card2.addEventListener('mouseover', () => {
     card2h2.style.opacity = '1'; // Сделать видимым
-    card2.style.transform = 'rotate(-4deg)';
+    card2.style.transform = 'rotate(-2deg)';
     card2.style.width = '380px';
     card2.style.height = '220px';
     card2img.style.filter = 'blur(2px)';
@@ -66,7 +66,7 @@ const card3img = document.getElementById('card3img');
 
 card3.addEventListener('mouseover', () => {
     card3h2.style.opacity = '1'; // Сделать видимым
-    card3.style.transform = 'rotate(4deg)';
+    card3.style.transform = 'rotate(2deg)';
     card3.style.width = '380px';
     card3.style.height = '220px';
     card3img.style.filter = 'blur(2px)';
@@ -86,7 +86,7 @@ const card4img = document.getElementById('card4img');
 
 card4.addEventListener('mouseover', () => {
     card4h2.style.opacity = '1'; // Сделать видимым
-    card4.style.transform = 'rotate(-4deg)';
+    card4.style.transform = 'rotate(-2deg)';
     card4.style.width = '380px';
     card4.style.height = '220px';
     card4img.style.filter = 'blur(2px)';
