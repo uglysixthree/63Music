@@ -64,9 +64,18 @@ if (ScrollTrigger.isTouch !==1) {
         }
     })
 
+
+    gsap.fromTo('.contact', { opacity: 0 }, {
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '.contact',
+            scrub: true
+        }
+    })
+
     gsap.fromTo('.contact_text', { x: -100, y: 100, opacity: 0.5 }, {
         opacity: 1,
-        y: 0,
+        y: 40,
         x: 0,
         scrollTrigger: {
             trigger: '.contact_text',

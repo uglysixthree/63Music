@@ -7,6 +7,7 @@
    justify-content: start;
    flex-direction: column;
    align-items: center;
+   background: #fff;
 }
 
 .contact_text {
