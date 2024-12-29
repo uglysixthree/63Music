@@ -45,15 +45,18 @@
   font-weight: 200;
 }
 
-.about-us_content .text_content {
-  /* width: 40%; */
+.text_content {
+  position: absolute;
+  width: 40%;
   left: 0;
+  -webkit-transition-duration: 1.2s;
+          transition-duration: 1.2s;
 }
 
-.about-us_content .img_content {
-  position: relative;
+.img_content {
+  position: absolute;
   right: 0;
-  width: 400%;
+  width: 55%;
   height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,13 +72,20 @@
   overflow: hidden;
 }
 
-.about-us_content .img_content img {
+.img_content img {
   width: 100%;
 }
 
-.about-us_content .img_content:hover {
-  width: 440%;
+.img_content_focus {
+  cursor: pointer;
+  width: 60%;
+  right: 1%;
 }
-.about-us_content .img_content:hover {
-  left: -500%;
+.img_content_focus img {
+  width: 140%;
+}
+
+.text_content_focus {
+  left: -5%;
+  color: rgba(0, 0, 0, 0.5);
 }

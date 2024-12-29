@@ -28,14 +28,16 @@
    font-size: 80px
    font-weight: 200
 
-.about-us_content .text_content
-   /* width: 40%; */
+.text_content
+   position: absolute
+   width: 40%
    left: 0
+   transition-duration: 1.2s
 
-.about-us_content .img_content
-   position: relative
+.img_content
+   position: absolute
    right: 0
-   width: 400%
+   width: 55%
    height: 50%
    display: flex
    align-items: center
@@ -43,11 +45,26 @@
    transition-duration: 1s
    overflow: hidden
 
-.about-us_content .img_content img
+.img_content img
    width: 100%
 
-.about-us_content
-   .img_content:hover
-      width: 440%
-      &
-         left: -500%
+// .about-us_content
+//    .img_content:hover
+//       cursor: pointer
+//       width: 440%
+//    .img_content:hover + .text_content
+//       left: -50%
+//       border: 2px solid red
+
+.img_content_focus
+   cursor: pointer
+   width: 60%
+   // transform: scaleX(1.4)
+   right: 1%
+   // border: 2px solid red
+   img
+      width: 140%
+
+.text_content_focus
+   left: -5%
+   color: rgb(0, 0, 0, 0.5)
