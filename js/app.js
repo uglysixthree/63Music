@@ -74,22 +74,4 @@ if (ScrollTrigger.isTouch !==1) {
         }
     })
 
-    gsap.fromTo('.about-us_text', { x: 100, y: 100, opacity: 0.5 }, {
-        opacity: 1,
-        y: 0,
-        x: 0,
-        scrollTrigger: {
-            trigger: '.about-us_text',
-            scrub: true
-        }
-    })
-
-    gsap.fromTo('.about-main_img', { x: 150, opacity: 0.75 }, {
-        opacity: 1,
-        x: 0,
-        scrollTrigger: {
-            trigger: '.about-main_img',
-            scrub: true
-        }
-    })
 }
