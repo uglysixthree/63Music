@@ -74,4 +74,31 @@ if (ScrollTrigger.isTouch !==1) {
         }
     })
 
+    gsap.fromTo('.about-us_h1', { y: 100, opacity: 0.5 }, {
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+            trigger: '.about-us_h1',
+            scrub: true
+        }
+    })
+
+    gsap.fromTo('.img_content', { x: 50, opacity: 0.75 }, {
+        opacity: 1,
+        x: 0,
+        scrollTrigger: {
+            trigger: '.img_content',
+            scrub: true
+        }
+    })
+
+    gsap.fromTo('.text_content', { x: -75, opacity: 0.65 }, {
+        opacity: 1,
+        x: 0,
+        scrollTrigger: {
+            trigger: '.text_content',
+            scrub: true
+        }
+    })
+
 }
