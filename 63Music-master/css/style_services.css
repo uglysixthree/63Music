@@ -8,6 +8,7 @@
    text-align: center;
    justify-content: center;
    flex-direction: column;
+   background: #7EA5D3;
 }
 
 .services_h1 {
@@ -20,43 +21,44 @@
    color: #7EA5D3;
    opacity: 0.75;
    font-family: "Rubik Mono One", serif;
-   font-size: 80px;
+   font-size: 140px;
    font-weight: 200;
+   color: #fff;
 }
 
 .cards {
    height: 97vh;
    display: flex;
    /* flex-wrap: wrap; */
-   
+   white-space: nowrap;
    position: relative;
    top: -15vh;
    align-items: center;
    align-content: center;
    justify-content: center;
-   animation: cards 5s infinite ease-in-out;
 }
 
-@keyframes cards {
-   0%, 100% { /* ��������� � �������� ������� */
+@keyframes scroll {
+   0% { /* ��������� � �������� ������� */
        transform: translateX(0);
    }
 
-   50% { /* �������� ����� */
-       transform: translateX(-20px);
+   100% { /* �������� ����� */
+       transform: translateX(-100%);
    }
 }
 
 .card-1 {
    margin: 30px;
-   width: 360px;
-   height: 200px;
+   width: 560px;
+   height: 320px;
    color: #fff;
    display: flex;
    justify-content: right;
    position: relative;
    transform: rotate(0deg);
    overflow: hidden;
+   flex: 0 0 auto;
    transition: transform 1s ease;
    cursor: pointer;
    box-shadow: #7EA5D3 10px 10px 10px;
@@ -65,14 +67,15 @@
 
 .card-2 {
    margin: 30px;
-   width: 360px;
-   height: 200px;
-   margin-top: 300px;
+   width: 560px;
+   height: 320px;
+   margin-top: 600px;
    color: #fff;
    display: flex;
    justify-content: right;
    transform: rotate(0deg);
    overflow: hidden;
+   flex: 0 0 auto;
    cursor: pointer;
    box-shadow: #7EA5D3 10px 10px 10px;
    transition: all 1s ease;
@@ -80,14 +83,15 @@
 
 .card-3 {
    margin: 30px;
-   width: 360px;
-   height: 200px;
+   width: 560px;
+   height: 320px;
    color: #fff;
    display: flex;
    justify-content: right;
    padding-top: -20vh;
    transform: rotate(0deg);
    overflow: hidden;
+   flex: 0 0 auto;
    cursor: pointer;
    box-shadow: #7EA5D3 10px 10px 10px;
    transition: all 1s ease;
@@ -95,14 +99,15 @@
 
 .card-4 {
    margin: 30px;
-   width: 360px;
-   height: 200px;
-   margin-top: 300px;
+   width: 560px;
+   height: 320px;
+   margin-top: 600px;
    color: #fff;
    display: flex;
    justify-content: right;
    transform: rotate(0deg);
    overflow: hidden;
+   flex: 0 0 auto;
    cursor: pointer;
    box-shadow: #7EA5D3 10px 10px 10px;
    transition: all 1s ease;

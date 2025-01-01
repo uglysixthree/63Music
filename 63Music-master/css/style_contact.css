@@ -21,10 +21,14 @@
    color: #7EA5D3;
    opacity: 0.75;
    font-family: "Rubik Mono One", serif;
-   font-size: 80px;
+   font-size: 140px;
    font-weight: 200;
 }
 
+.contact_content button {
+   background: black;
+   color: #fff;
+}
 
 .services_section,
 .contact_section {
@@ -70,9 +74,9 @@
    margin: 30px;
    border: none;
    padding: 15px 15px;
-   background: #fff;
+   background: black;
    text-decoration: none;
-   color: black;
+   color: #fff;
    cursor: pointer;
    font-weight: 600;
    font-size: 22px;
@@ -187,7 +191,7 @@ a, a:link, a:visited, a:hover  {
 
 button {
   font-family: inherit;
-   font-size: inherit;
+   font-size: 30px;
    color: inherit;
 }
 button:focus, button:active {
@@ -195,7 +199,7 @@ button:focus, button:active {
 }
 button:hover {
    cursor: pointer;
-   background-color: white;
+   background: #7EA5D3;
 }
 
 .contact_content button {

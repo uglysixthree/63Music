@@ -21,7 +21,7 @@ if (ScrollTrigger.isTouch !==1) {
 
     gsap.fromTo('.services_h1', { y: 100, opacity: 0.5 }, {
         opacity: 1,
-        y: 0,
+        y: 25,
         scrollTrigger: {
             trigger: '.services_h1',
             scrub: true
@@ -85,15 +85,14 @@ if (ScrollTrigger.isTouch !==1) {
 
     gsap.fromTo('.about-us_h1', { y: 100, opacity: 0.5 }, {
         opacity: 1,
-        y: 0,
+        y: 30,
         scrollTrigger: {
             trigger: '.about-us_h1',
             scrub: true
         }
     })
 
-    gsap.fromTo('.img_content', { x: 50, opacity: 0.75 }, {
-        opacity: 1,
+    gsap.fromTo('.img_content', { x: 200 }, {
         x: 0,
         scrollTrigger: {
             trigger: '.img_content',
