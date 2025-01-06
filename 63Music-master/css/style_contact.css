@@ -36,6 +36,15 @@
    z-index: 1; /* ��� ����� ������ ��������, ����� ������� ��� ���������� */
 }
 
+.links a {
+   color: black;
+}
+
+.links a:hover {
+   transition: 0.36s;
+   color: #7EA5D3;
+}
+
 .feedback-form {
    display: flex;
    justify-content: center;
