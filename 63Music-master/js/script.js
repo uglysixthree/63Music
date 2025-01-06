@@ -133,3 +133,11 @@ aboutMI.addEventListener('mouseout', () => {
     aboutMI.style.width = '330%';
     aboutMP.style.opacity = '1';
 });
+
+const container = document.querySelector('.services');
+const content = document.querySelector('.cards');
+
+container.addEventListener('animationiteration', () => {
+  // Перемещаем контент обратно в начало, когда анимация закончена
+  content.appendChild(content.firstElementChild);
+});

@@ -9,6 +9,8 @@
    justify-content: center;
    flex-direction: column;
    background: #7EA5D3;
+   overflow: hidden; /* Скрыть все, что выходит за пределы контейнера */
+   position: relative;
 }
 
 .services_h1 {
@@ -36,6 +38,7 @@
    align-items: center;
    align-content: center;
    justify-content: center;
+   animation: scroll 20s linear infinite; /* Анимация прокрутки */
 }
 
 @keyframes scroll {
