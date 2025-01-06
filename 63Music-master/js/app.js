@@ -5,7 +5,7 @@ if (ScrollTrigger.isTouch !==1) {
     ScrollSmoother.create({
         wrapper: '.wrapper',
         content: '.content',
-        smooth: 1.5,
+        smooth: 1.25,
         effect: true
     })
 
@@ -65,7 +65,7 @@ if (ScrollTrigger.isTouch !==1) {
     })
 
 
-    gsap.fromTo('.contact', { opacity: 0 }, {
+    gsap.fromTo('.contact', { opacity: 0.525, }, {
         opacity: 1,
         scrollTrigger: {
             trigger: '.contact',
