@@ -14,7 +14,8 @@
 }
 
 .services_h1 {
-   height: 4vh;
+   /* height: 4vh; */
+   position: absolute;
 }
 
 .services_h1 h1 {
@@ -23,7 +24,7 @@
    color: #7EA5D3;
    opacity: 0.75;
    font-family: "Rubik Mono One", serif;
-   font-size: 140px;
+   font-size: 340px;
    font-weight: 200;
    color: #fff;
 }
@@ -39,16 +40,6 @@
    align-content: center;
    justify-content: center;
    animation: scroll 20s linear infinite; /* Анимация прокрутки */
-}
-
-@keyframes scroll {
-   0% { /* ��������� � �������� ������� */
-       transform: translateX(0);
-   }
-
-   100% { /* �������� ����� */
-       transform: translateX(-100%);
-   }
 }
 
 .card-1 {
