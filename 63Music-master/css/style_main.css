@@ -31,7 +31,7 @@ header {
 }
 
 .container {
-    max-width: 965px;
+    max-width: 75%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -93,17 +93,16 @@ header {
     border-right: 2px solid black;
     display: flex;
     justify-content: right;
-    font-size: 3.5rem;
     text-align: right;
     color: #7EA5D3;
     font-family: "Rubik Mono One", serif;
-    font-size: 80px;
+    font-size: 7.5rem;
     font-weight: 200;
 }
 
 .right_content {
     border-left: 2px solid black;
-    font-size: 3.25rem;
+    font-size: 5rem;
     opacity: 0.7;
 }
 

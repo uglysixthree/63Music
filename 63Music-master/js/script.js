@@ -25,16 +25,16 @@ const card1img = document.getElementById('card1img');
 card1.addEventListener('mouseover', () => {
     card1h2.style.opacity = '1'; // Сделать видимым
     card1.style.transform = 'rotate(2deg)';
-    card1.style.width = '380px';
-    card1.style.height = '220px';
+    card1.style.width = '580px';
+    card1.style.height = '340px';
     card1img.style.filter = 'blur(2px)';
 });
 
 card1.addEventListener('mouseout', () => {
     card1h2.style.opacity = '0'; // Скрыть
     card1.style.transform = 'rotate(0deg)';
-    card1.style.width = '360px';
-    card1.style.height = '200px';
+    card1.style.width = '560px';
+    card1.style.height = '320px';
     card1img.style.filter = 'blur(0px)';
 });
 
@@ -47,16 +47,16 @@ const card2img = document.getElementById('card2img');
 card2.addEventListener('mouseover', () => {
     card2h2.style.opacity = '1'; // Сделать видимым
     card2.style.transform = 'rotate(-2deg)';
-    card2.style.width = '380px';
-    card2.style.height = '220px';
+    card2.style.width = '580px';
+    card2.style.height = '340px';
     card2img.style.filter = 'blur(2px)';
 });
 
 card2.addEventListener('mouseout', () => {
     card2h2.style.opacity = '0'; // Скрыть
     card2.style.transform = 'rotate(0deg)';
-    card2.style.width = '360px';
-    card2.style.height = '200px';
+    card2.style.width = '560px';
+    card2.style.height = '320px';
     card2img.style.filter = 'blur(0px)';
 });
 
@@ -67,16 +67,16 @@ const card3img = document.getElementById('card3img');
 card3.addEventListener('mouseover', () => {
     card3h2.style.opacity = '1'; // Сделать видимым
     card3.style.transform = 'rotate(2deg)';
-    card3.style.width = '380px';
-    card3.style.height = '220px';
+    card3.style.width = '580px';
+    card3.style.height = '340px';
     card3img.style.filter = 'blur(2px)';
 });
 
 card3.addEventListener('mouseout', () => {
     card3h2.style.opacity = '0'; // Скрыть
     card3.style.transform = 'rotate(0deg)';
-    card3.style.width = '360px';
-    card3.style.height = '200px';
+    card3.style.width = '560px';
+    card3.style.height = '320px';
     card3img.style.filter = 'blur(0px)';
 });
 
@@ -87,16 +87,16 @@ const card4img = document.getElementById('card4img');
 card4.addEventListener('mouseover', () => {
     card4h2.style.opacity = '1'; // Сделать видимым
     card4.style.transform = 'rotate(-2deg)';
-    card4.style.width = '380px';
-    card4.style.height = '220px';
+    card4.style.width = '580px';
+    card4.style.height = '340px';
     card4img.style.filter = 'blur(2px)';
 });
 
 card4.addEventListener('mouseout', () => {
     card4h2.style.opacity = '0'; // Скрыть
     card4.style.transform = 'rotate(0deg)';
-    card4.style.width = '360px';
-    card4.style.height = '200px';
+    card4.style.width = '560px';
+    card4.style.height = '320px';
     card4img.style.filter = 'blur(0px)';
 });
 
@@ -121,15 +121,15 @@ modal1.addEventListener('click', (e) => {
   }
 });
 
-const aboutMI = document.getElementById('about-main_img');
-const aboutMP = document.getElementById('about-main_p');
+const aboutMI = document.getElementById('img_content');
+const aboutMP = document.getElementById('text_content');
 
 aboutMI.addEventListener('mouseover', () => {
-    aboutMI.style.width = '650px';
-    aboutMP.style.width = '250px';
+    aboutMI.style.width = '350%';
+    aboutMP.style.opacity = '0.5';
 });
 
 aboutMI.addEventListener('mouseout', () => {
-    aboutMI.style.width = '600px';
-    aboutMP.style.width = '300px';
+    aboutMI.style.width = '330%';
+    aboutMP.style.opacity = '1';
 });
