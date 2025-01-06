@@ -163,9 +163,20 @@
    justify-content: space-between;
 }
 
-.contact_main path {
+.contact_main .path {
    width: 50%;
    height: 100%;
+   position: relative;
+   /* display: flex; */
+   /* align-items: top; */
+   /* justify-content: right; */
+}
+
+.path iframe {
+   position: absolute;
+   right: 0;
+   width: 75%;
+   height: 70%;
 }
 
 .contact_main .contact_content {
