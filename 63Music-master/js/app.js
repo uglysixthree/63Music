@@ -110,3 +110,15 @@ if (ScrollTrigger.isTouch !==1) {
     })
 
 }
+
+gsap.to(".cards", {
+    x: () => -(document.querySelector(".card_item").scrollWidth - window.innerWidth), // Прокрутка на ширину контента
+    ease: "none", // Без замедления
+    scrollTrigger: {
+      trigger: ".services", // Триггер для анимации
+      start: "top top", // Когда верхняя часть контейнера будет вверху окна
+      end: "bottom bottom", // Когда нижняя часть контейнера выйдет из окна
+      scrub: true, // Для плавной синхронизации
+      pin: true, // Чтобы закрепить контейнер
+    }
+  });

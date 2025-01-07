@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/style_about-us.css">
     <link rel="stylesheet" href="../css/style_contact.css">
     <link rel="stylesheet" href="../css/style_footer.css">
+    <link rel="stylesheet" href="../css/style_modal.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <script src="../gsap/gsap.min.js" defer></script>
@@ -18,7 +19,7 @@
     <script src="../gsap/ScrollSmoother.min.js" defer></script>
     <script src="../js/app.js" defer></script>
 </head>
-<body>
+<body id="body">
     <img src="../img/anime.gif" class="body_img" alt="">
     <div class="wrapper">
         <div class="content">
@@ -112,8 +113,8 @@ Lorem in magna aliqua qui et mollit mollit veniam sit aliquip proident. Cillum c
                         <div class="contact_content">
                             <p>Казань, ул. Чистопольская, д.64</p>
                             <div class="links">
-                                <a href="">Вконтакте</a>
-                                <a href="">Telegram</a>
+                                <a href="https://vk.com/63musiclabel">Вконтакте</a>
+                                <a href="https://t.me/music63label">Telegram</a>
                             </div>
                             <button type="button">ОСТАВИТЬ<br/>ЗАЯВКУ</button>
                         </div>
@@ -121,43 +122,32 @@ Lorem in magna aliqua qui et mollit mollit veniam sit aliquip proident. Cillum c
                 </div>
             </section>
             
-            <div class="modal1" id="modal1">
+            <div id="myModal" class="modal">
                 <div class="modal-content">
-                  <span class="close" id="close">&times;</span>
-                  <div class="contact_conteiner">
-                    <div class="feedback-form-container" id="feedbackFormContainer">
-                        <form class="feedback-form">
-                          <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-                          
-                          <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
-                          
-                          <input type="text" id="number" name="number" placeholder="Введите ваш номер телефона" required>
-                          
-                          
-                          <a href="#" class="contact_a">ОСТАВИТЬ ЗАЯВКУ</a>
-                        </form>
-                      </div>
+                    <span class="close-btn" id="closeModalBtn">&times;</span>
+                    <h2>Заголовок модального окна</h2>
+                    <p>Это текст в модальном окне.</p>
+                    <button>Дополнительная кнопка</button>
                 </div>
-                </div>
-              </div>
+            </div>
               
-                <footer>
-                    <div class="footer_content">
-                        <img src="../img/logo.png" class="footer-logo" alt="">
-                        <h1>63Music</h1>
-                        <a href="#main_section">главная</a>
-                        <a href="#services_section">услуги</a>
-                        <a href="#about-us_section">о нас</a>
-                        <a href="#contact_section">контакты</a>
-                    </div>
-                    <br>
-                    <div class="footer_footer">
-                        <h3>ИП Шаталов Валерий Сергеевич</h3>
-                        <h4>ИНН 371857183</h4>
-                        <a href="#">Политика конфиденциальности</a>
-                        <a href="#">Правила оплаты и безопасность платежей</a>
-                    </div>
-                </footer>
+            <footer>
+                <div class="footer_content">
+                    <img src="../img/logo.png" class="footer-logo" alt="">
+                    <h1>63Music</h1>
+                    <a href="#main_section">главная</a>
+                    <a href="#services_section">услуги</a>
+                    <a href="#about-us_section">о нас</a>
+                    <a href="#contact_section">контакты</a>
+                </div>
+                <br>
+                <div class="footer_footer">
+                    <h3>ИП Шаталов Валерий Сергеевич</h3>
+                    <h4>ИНН 371857183</h4>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Правила оплаты и безопасность платежей</a>
+                </div>
+            </footer>
 
         </div>
     </div>
