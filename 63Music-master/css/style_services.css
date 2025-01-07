@@ -9,6 +9,7 @@
    justify-content: center;
    flex-direction: column;
    background: #7EA5D3;
+   overflow-x: auto;
    overflow: hidden; /* Скрыть все, что выходит за пределы контейнера */
    position: relative;
 }
