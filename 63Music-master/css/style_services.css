@@ -144,7 +144,8 @@
 }
 
 .card-1_text h2 {
-   margin-bottom: 1vh;
+   margin-top: 20vh;
+   font-size: 40px;
    opacity: 0;
    font-family: "Rubik Mono One", serif;
    transition: opacity 1s ease;
@@ -163,8 +164,10 @@
 }
 
 .card-2_text h2 {
-   margin-top: 11vh;
+   margin-top: 20vh;
+   font-size: 40px;
    opacity: 0;
+   font-family: "Rubik Mono One", serif;
    transition: opacity 1s ease;
 }
 
@@ -181,8 +184,10 @@
 }
 
 .card-3_text h2 {
-   margin-top: 11vh;
+   margin-top: 20vh;
+   font-size: 40px;
    opacity: 0;
+   font-family: "Rubik Mono One", serif;
    transition: opacity 1s ease;
 }
 
@@ -199,7 +204,9 @@
 }
 
 .card-4_text h2 {
-   margin-top: 11vh;
+   margin-top: 20vh;
+   font-size: 40px;
    opacity: 0;
+   font-family: "Rubik Mono One", serif;
    transition: opacity 1s ease;
 }
