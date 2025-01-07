@@ -19,7 +19,8 @@ if (ScrollTrigger.isTouch !==1) {
         }
     })
 
-    gsap.fromTo('.services_h1', { y: 100, opacity: 0.5 }, {
+    gsap.fromTo('.services_h1', { x: 80, y: 100, opacity: 0.5 }, {
+        x: 0,
         opacity: 1,
         y: 25,
         scrollTrigger: {
@@ -110,15 +111,9 @@ if (ScrollTrigger.isTouch !==1) {
     })
 
 }
-
 gsap.to(".cards", {
-    x: () => -(document.querySelector(".card_item").scrollWidth - window.innerWidth), // Прокрутка на ширину контента
-    ease: "none", // Без замедления
-    scrollTrigger: {
-      trigger: ".services", // Триггер для анимации
-      start: "top top", // Когда верхняя часть контейнера будет вверху окна
-      end: "bottom bottom", // Когда нижняя часть контейнера выйдет из окна
-      scrub: true, // Для плавной синхронизации
-      pin: true, // Чтобы закрепить контейнер
-    }
+    x: "-100%", // Двигаем содержимое на 100% влево
+    duration: 20, // Время на одно полное движение
+    ease: "linear", // Плавная анимация
+    repeat: -1, // Бесконечное повторение
   });

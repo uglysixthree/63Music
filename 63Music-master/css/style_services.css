@@ -39,7 +39,7 @@
    align-items: center;
    align-content: center;
    justify-content: center;
-   animation: scroll 20s linear infinite; /* Анимация прокрутки */
+   transition: all 15s ease;
 }
 
 .card-1 {
@@ -144,8 +144,9 @@
 }
 
 .card-1_text h2 {
-   margin-top: 11vh;
+   margin-bottom: 1vh;
    opacity: 0;
+   font-family: "Rubik Mono One", serif;
    transition: opacity 1s ease;
 }
 
