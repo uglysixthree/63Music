@@ -98,12 +98,14 @@ header {
     font-family: "Rubik Mono One", serif;
     font-size: 7.5rem;
     font-weight: 200;
+    cursor: default;
 }
 
 .right_content {
     border-left: 2px solid black;
     font-size: 5rem;
     opacity: 0.7;
+    cursor: default;
 }
 
 @keyframes showLeftContent {

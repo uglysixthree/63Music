@@ -47,6 +47,7 @@
   color: #7EA5D3;
   font-family: "Rubik Mono One", serif;
   font-size: 36px;
+  cursor: default;
 }
 
 /* Кнопка для закрытия модального окна */

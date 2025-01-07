@@ -43,10 +43,12 @@
   font-family: "Rubik Mono One", serif;
   font-size: 140px;
   font-weight: 200;
+  cursor: default;
 }
 
 .text_content {
   position: absolute;
+  cursor: default;
   width: 40%;
   left: 0;
   -webkit-transition-duration: 1.2s;

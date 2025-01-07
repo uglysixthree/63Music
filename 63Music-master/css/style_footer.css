@@ -37,6 +37,7 @@ footer {
 .footer_content h1 {
     font-family: "Rubik Mono One", serif;
     color: #7EA5D3;
+    cursor: default;
 }
 
 .footer_footer {
