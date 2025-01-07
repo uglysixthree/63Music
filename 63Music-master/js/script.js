@@ -115,6 +115,7 @@ const closeModalBtn = document.getElementById("closeModalBtn");
 // Открыть модальное окно
 openModalBtn.onclick = function() {
   modal.style.display = "flex";
+  
 }
 
 // Закрыть модальное окно
