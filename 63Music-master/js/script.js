@@ -108,24 +108,3 @@ aboutMI.addEventListener('mouseout', () => {
     aboutMP.style.opacity = '1';
 });
 
-const modal = document.getElementById("myModal");
-const openModalBtn = document.getElementById("card-1");
-const closeModalBtn = document.getElementById("closeModalBtn");
-
-// Открыть модальное окно
-openModalBtn.onclick = function() {
-  modal.style.display = "flex";
-  
-}
-
-// Закрыть модальное окно
-closeModalBtn.onclick = function() {
-  modal.style.display = "none";
-}
-
-// Закрытие модального окна при клике за пределами окна
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
