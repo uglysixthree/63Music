@@ -48,34 +48,35 @@
                 </div>
             </section>
 
+
             <section class="services_section" id="services_section">
                 <div class="services">
                     <div class="services_h1" id="services_h1" data-base="3s">
                         <h1>УСЛУГИ</h1>
                     </div>
                     <div class="cards">
-                        <div class="card-1 card_item" id="card-1">
+                        <div class="card-1 card_item" id="card-1" name="mixing">
                             <img src="../img/card-1.jpg" alt="Alternate Text" id="card1img" class="card1img" />
                             <div class="card-1_text">
                                 <h1>Сведение</h1>
                                 <h2 id="card-1_h2">2000р</h2>
                             </div>
                         </div>
-                        <div class="card-2 card_item" id="card-2">
+                        <div class="card-2 card_item" id="card-2" name="record">
                             <img src="../img/card-2.jpg" alt="Alternate Text" id="card2img" class="card2img" />
                             <div class="card-2_text">
                                 <h1>Запись</h1>
                                 <h2 id="card-2_h2">от 1500р</h2>
                             </div>
                         </div>
-                        <div class="card-3 card_item" id="card-3">
+                        <div class="card-3 card_item" id="card-3" name="rent">
                             <img src="../img/card-3.jpg" alt="Alternate Text" id="card3img" class="card3img" />
                             <div class="card-3_text">
                                 <h1>Аренда студии</h1>
                                 <h2 id="card-3_h2">от 1500р</h2>
                             </div>
                         </div>
-                        <div class="card-4 card_item" id="card-4">
+                        <div class="card-4 card_item" id="card-4" name="bit">
                             <img src="../img/card-4.jpg" alt="Alternate Text" id="card4img" class="card4img" />
                             <div class="card-4_text">
                                 <h1>Бит</h1>
@@ -102,6 +103,7 @@ Lorem in magna aliqua qui et mollit mollit veniam sit aliquip proident. Cillum c
                     </div>
                 </div>
             </section>
+
 
             <section class="contact_section" id="contact_section">
                 <div class="contact" id="contact">
@@ -154,14 +156,21 @@ Lorem in magna aliqua qui et mollit mollit veniam sit aliquip proident. Cillum c
     
     <div id="myModal" class="modal">
         <div class="modal-content">
+            <div class="modal_img">
+                <img src="../img/card-1.jpg" alt="">
+            </div>
             <div class="modal-c1">
-                <!-- <img src="../img/card-1.jpg" alt=""> -->
                 <span class="close-btn" id="closeModalBtn">&times;</span>
-                <h1>СВЕДЕНИЕ</h1>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <a href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+                <div class="top_h">
+                    <h1>СВЕДЕНИЕ</h1>
+                    <p>оставьте заяву и мы свяжемся с вами</p>
+                </div>
+                <div class="input_block">
+                    <input type="text" placeholder="Имя:">
+                    <input type="text" placeholder="Номер телефона:">
+                    <input type="text" placeholder="EMail:">
+                </div>
+                <a href="#"><span>ОСТАВИТЬ</span> <span>ЗАЯВКУ</span></a>
             </div>
         </div>
     </div>
@@ -169,5 +178,6 @@ Lorem in magna aliqua qui et mollit mollit veniam sit aliquip proident. Cillum c
     <script src="../js/script.js"></script>
     <script src="../js/about-us.js"></script>
     <script src="../js/services.js"></script>
+    <script src="../js/modal.js"></script>
 </body>
 </html>
