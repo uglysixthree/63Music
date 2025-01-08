@@ -19,6 +19,14 @@ if (ScrollTrigger.isTouch !==1) {
         }
     })
 
+    gsap.fromTo('.services', { opacity: 0.65 }, {
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '.services',
+            scrub: true
+        }
+    })
+
     gsap.fromTo('.services_h1', { x: 80, y: 100, opacity: 0.5 }, {
         x: 0,
         opacity: 1,
