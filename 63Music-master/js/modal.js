@@ -1,5 +1,5 @@
 const modal = document.getElementById("myModal");
-const openModalBtns = document.querySelectorAll(".card_item");
+const openModalBtns = document.querySelectorAll(".swiper-slide");
 const closeModalBtn = document.getElementById("closeModalBtn");
 
 // Открыть модальное окно
