@@ -56,13 +56,3 @@ class ModalWindowForm {
    }
 }
 
-const modalA = document.getElementById("modal-content_a");
-const SYA = document.getElementsByClassName(".submit-your-application");
-
-SYA.addEventListener('mouseover', () => {
-   modalA.style.marginLeft = '0%';
-});
-
-SYA.addEventListener('mouseout', () => {
-   modalA.style.marginLeft = '18%';
-});

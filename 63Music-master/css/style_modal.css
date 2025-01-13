@@ -66,22 +66,6 @@
   line-height: 0;
 }
 
-.submit-your-application {
-  display: flex;
-  position: absolute;
-  padding: 10px;
-  border: 3px solid #3c4e63;
-  width: 20%;
-  margin-top: 46.5%;
-  height: 30px;
-  margin-left: -18%;
-  transition: all 0.5s ease;
-}
-
-.submit-your-application:hover {
-  margin-left: 23%;
-}
-
 .modal-content a {
   display: block;
   width: 100%;
@@ -89,8 +73,14 @@
   font-family: "Rubik Mono One", serif;
   color: #7EA5D3;
   font-size: 36px;
+  transition: all 1s ease;
 }
 
+.modal-content a:hover {
+  color: #3c4e63;
+  margin-left: 5%;
+  text-decoration: overline;
+}
 
 .input_block {
   height: 30%;
