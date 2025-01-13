@@ -118,5 +118,21 @@ if (ScrollTrigger.isTouch !==1) {
         }
     })
 
+    gsap.fromTo('.top_h1', { x: -75, opacity: 0.65 }, {
+        opacity: 1,
+        x: 0,
+        scrollTrigger: {
+            trigger: '.top_h1',
+            scrub: true
+        }
+    })
 
+    gsap.fromTo('.top_p', { x: 75, opacity: 0.65 }, {
+        opacity: 1,
+        x: 0,
+        scrollTrigger: {
+            trigger: '.top_p',
+            scrub: true
+        }
+    })
 }
