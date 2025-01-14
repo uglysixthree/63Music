@@ -108,4 +108,3 @@ aboutMI.addEventListener('mouseout', () => {
     aboutMP.style.opacity = '1';
 });
 
-new Swiper('.cards');

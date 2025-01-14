@@ -6,7 +6,7 @@
 
     <title>63Music</title>
     
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/style_main.css">
     <link rel="stylesheet" href="../css/style_services.css">
     <link rel="stylesheet" href="../css/style_about-us.css">
@@ -51,39 +51,42 @@
 
 
             <section class="services_section" id="services_section">
-                <div class="services swiper-container">
+                <div class="services">
                     <div class="services_h1" id="services_h1" data-base="3s">
                         <h1>УСЛУГИ</h1>
                     </div>
-                    <div class="cards swiper-wrapper">
-                        <div class="card-1 swiper-slide" id="card-1" name="mixing">
-                            <img src="../img/card-1.jpg" alt="Alternate Text" id="card1img" class="card1img" />
-                            <div class="card-1_text">
-                                <h1>Сведение</h1>
-                                <h2 id="card-1_h2">2000р</h2>
+                    <div class="swiper">
+                        <div class="cards">
+                            <div class="card-1 swiper-slide" id="card-1" name="mixing">
+                                <img src="../img/card-1.jpg" alt="Alternate Text" id="card1img" class="card1img" />
+                                <div class="card-1_text">
+                                    <h1>Сведение</h1>
+                                    <h2 id="card-1_h2">2000р</h2>
+                                </div>
+                            </div>
+                            <div class="card-2 swiper-slide" id="card-2" name="record">
+                                <img src="../img/card-2.jpg" alt="Alternate Text" id="card2img" class="card2img" />
+                                <div class="card-2_text">
+                                    <h1>Запись</h1>
+                                    <h2 id="card-2_h2">от 1500р</h2>
+                                </div>
+                            </div>
+                            <div class="card-3 swiper-slide" id="card-3" name="rent">
+                                <img src="../img/card-3.jpg" alt="Alternate Text" id="card3img" class="card3img" />
+                                <div class="card-3_text">
+                                    <h1>Аренда студии</h1>
+                                    <h2 id="card-3_h2">от 1500р</h2>
+                                </div>
+                            </div>
+                            <div class="card-4 swiper-slide" id="card-4" name="bit">
+                                <img src="../img/card-4.jpg" alt="Alternate Text" id="card4img" class="card4img" />
+                                <div class="card-4_text">
+                                    <h1>Бит</h1>
+                                    <h2 id="card-4_h2">от 1000р</h2>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-2 swiper-slide" id="card-2" name="record">
-                            <img src="../img/card-2.jpg" alt="Alternate Text" id="card2img" class="card2img" />
-                            <div class="card-2_text">
-                                <h1>Запись</h1>
-                                <h2 id="card-2_h2">от 1500р</h2>
-                            </div>
-                        </div>
-                        <div class="card-3 swiper-slide" id="card-3" name="rent">
-                            <img src="../img/card-3.jpg" alt="Alternate Text" id="card3img" class="card3img" />
-                            <div class="card-3_text">
-                                <h1>Аренда студии</h1>
-                                <h2 id="card-3_h2">от 1500р</h2>
-                            </div>
-                        </div>
-                        <div class="card-4 swiper-slide" id="card-4" name="bit">
-                            <img src="../img/card-4.jpg" alt="Alternate Text" id="card4img" class="card4img" />
-                            <div class="card-4_text">
-                                <h1>Бит</h1>
-                                <h2 id="card-4_h2">от 1000р</h2>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </section>
@@ -114,10 +117,10 @@ Lorem in magna aliqua qui et mollit mollit veniam sit aliquip proident. Cillum c
                             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae0bbae85b656c8b548d20219845ac502d1b5629cec2068d1ba6b98d5dfd6f1ff&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
                         </div>
                         <div class="contact_content">
-                            <p>Казань, ул. Чистопольская, д.64</p>
+                            <p><img src="../img/map.svg" alt="Icon">Казань, ул. Чистопольская, д.64</p>
                             <div class="links">
-                                <a href="https://vk.com/63musiclabel">Вконтакте</a>
-                                <a href="https://t.me/music63label">Telegram</a>
+                                <a href="https://vk.com/63musiclabel"><img src="../img/vk.svg" alt="Icon">Вконтакте</a>
+                                <a href="https://t.me/music63label"><img src="../img/tg.svg" alt="Icon">Telegram</a>
                             </div>
                             <button type="button">ОСТАВИТЬ<br/>ЗАЯВКУ</button>
                         </div>
@@ -177,8 +180,9 @@ Lorem in magna aliqua qui et mollit mollit veniam sit aliquip proident. Cillum c
         </div>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/swiper.js"></script>
     <script src="../js/about-us.js"></script>
     <script src="../js/services.js"></script>
     <script src="../js/modal.js"></script>

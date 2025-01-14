@@ -70,6 +70,7 @@
    color: #7EA5D3;
 }
 
+
 .feedback-form {
    display: flex;
    justify-content: center;
@@ -192,4 +193,30 @@ button:hover {
    align-self: center;
    font-size: 1rem;
    letter-spacing: 47%;
+}
+
+.contact_content img {
+   width: 18px;
+   height: 18px;
+   padding-right: 10px;
+}
+
+.links img {
+   width: 16px;
+   height: 16px;
+   padding-right: 10px;
+}
+
+.contact_content p {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 16px;
+}
+
+.links a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 16px;
 }
