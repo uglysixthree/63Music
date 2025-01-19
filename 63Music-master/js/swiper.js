@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 2, // Показывать 3 слайда одновременно
+  slidesPerView: 3, // Показывать 3 слайда одновременно
   spaceBetween: 10,  // Отступы между слайдами
   loop: true,        // Бесконечная прокрутка
   autoplay: {
