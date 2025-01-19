@@ -37,41 +37,7 @@ if (ScrollTrigger.isTouch !==1) {
         }
     })
 
-    gsap.fromTo('.card-1', { x: -100, opacity: 0.75 }, {
-        opacity: 1,
-        x: 0,
-        scrollTrigger: {
-            trigger: '.card-1',
-            scrub: true
-        }
-    })
-
-    gsap.fromTo('.card-2', { x: -50, opacity: 0.75 }, {
-        opacity: 1,
-        x: 0,
-        scrollTrigger: {
-            trigger: '.card-2',
-            scrub: true
-        }
-    })
-
-    gsap.fromTo('.card-3', { x: 50, opacity: 0.75 }, {
-        opacity: 1,
-        x: 0,
-        scrollTrigger: {
-            trigger: '.card-3',
-            scrub: true
-        }
-    })
-
-    gsap.fromTo('.card-4', { x: 100, opacity: 0.75 }, {
-        opacity: 1,
-        x: 0,
-        scrollTrigger: {
-            trigger: '.card-4',
-            scrub: true
-        }
-    })
+    
 
 
     gsap.fromTo('.contact', { opacity: 0.525, }, {

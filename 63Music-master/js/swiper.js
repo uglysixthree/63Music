@@ -1,27 +1,8 @@
-// import Swiper bundle with all modules installed
-import Swiper from 'swiper/bundle';
-
-// import styles bundle
-import 'swiper/css/bundle';
-
-const swiper = new Swiper('.swiper', {
-    autoplay: {
-        delay: 5000,
-      },
-    speed: 400,
-    spaceBetween: 100,
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3, // Показывать 3 слайда одновременно
+  spaceBetween: 10,  // Отступы между слайдами
+  loop: true,        // Бесконечная прокрутка
+  autoplay: {
+    delay: 3000,     // Автопрокрутка каждые 3 секунды
+  },
 });

@@ -6,7 +6,7 @@
 
     <title>63Music</title>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/style_main.css">
     <link rel="stylesheet" href="../css/style_services.css">
     <link rel="stylesheet" href="../css/style_about-us.css">
@@ -55,8 +55,8 @@
                     <div class="services_h1" id="services_h1" data-base="3s">
                         <h1>УСЛУГИ</h1>
                     </div>
-                    <div class="swiper">
-                        <div class="cards">
+                    <div class="swiper swiper-container" id="swiper">
+                        <div class="cards swiper-wrapper">
                             <div class="card-1 swiper-slide" id="card-1" name="mixing">
                                 <img src="../img/card-1.jpg" alt="Alternate Text" id="card1img" class="card1img" />
                                 <div class="card-1_text">
@@ -82,6 +82,20 @@
                                 <img src="../img/card-4.jpg" alt="Alternate Text" id="card4img" class="card4img" />
                                 <div class="card-4_text">
                                     <h1>Бит</h1>
+                                    <h2 id="card-4_h2">от 1000р</h2>
+                                </div>
+                            </div>
+                            <div class="card-3 swiper-slide" id="card-3" name="rent">
+                                <img src="../img/card-3.jpg" alt="Alternate Text" id="card3img" class="card3img" />
+                                <div class="card-3_text">
+                                    <h1>Трек с нуля</h1>
+                                    <h2 id="card-3_h2">от 1500р</h2>
+                                </div>
+                            </div>
+                            <div class="card-4 swiper-slide" id="card-4" name="bit">
+                                <img src="../img/card-4.jpg" alt="Alternate Text" id="card4img" class="card4img" />
+                                <div class="card-4_text">
+                                    <h1>Сертификаты</h1>
                                     <h2 id="card-4_h2">от 1000р</h2>
                                 </div>
                             </div>
@@ -180,7 +194,7 @@ Lorem in magna aliqua qui et mollit mollit veniam sit aliquip proident. Cillum c
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/swiper.js"></script>
     <script src="../js/about-us.js"></script>
