@@ -1,124 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>63Music</title>
-    
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/style_main.css">
-    <link rel="stylesheet" href="../css/style_services.css">
-    <link rel="stylesheet" href="../css/style_about-us.css">
-    <link rel="stylesheet" href="../css/style_contact.css">
-    <link rel="stylesheet" href="../css/style_footer.css">
-    <link rel="stylesheet" href="../css/style_modal.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-    <script src="../gsap/gsap.min.js" defer></script>
-    <script src="../gsap/ScrollTrigger.min.js" defer></script>
-    <script src="../gsap/ScrollSmoother.min.js" defer></script>
-    <script src="../js/app.js" defer></script>
-</head>
-<body id="body">
-    <img src="../img/anime.gif" class="body_img" alt="">
-    <div class="wrapper">
-        <div class="content">
+		<title>63Music</title>
 
-            <section class="main_section" id="main_section">
-                <div class="main">
-                    <header>
-                        <div class="container">
-                            <img src="../img/logo.png" alt="Logo">
-                            <a href="#main_section">главная</a>
-                            <a href="#services_section">услуги</a>
-                            <a href="#about-us_section">о нас</a>
-                            <a href="#contact_section">контакты</a>
-                        </div>
-                    </header>
-                    <div class="main_content" id="main_content" data-base="2s">
-                        <div class="container">
-                            <div class="left_content main_content_inner">
-                                <p>63 <br> Music</p>
-                            </div>
-                            <div class="right_content main_content_inner">
-                                <p>Студия <br> звукозаписи <br> в Казани</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="../css/style_main.css" />
+		<link rel="stylesheet" href="../css/style_services.css" />
+		<link rel="stylesheet" href="../css/style_about-us.css" />
+		<link rel="stylesheet" href="../css/style_contact.css" />
+		<link rel="stylesheet" href="../css/style_footer.css" />
+		<link rel="stylesheet" href="../css/style_modal.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+		<script src="../gsap/gsap.min.js" defer></script>
+		<script src="../gsap/ScrollTrigger.min.js" defer></script>
+		<script src="../gsap/ScrollSmoother.min.js" defer></script>
+		<script src="../js/app.js" defer></script>
+	</head>
+	<body id="body">
+		<img src="../img/anime.gif" class="body_img" alt="" />
+		<div class="wrapper">
+			<div class="content">
+				<section class="main_section" id="main_section">
+					<div class="main">
+						<header>
+							<div class="container">
+								<img src="../img/logo.png" alt="Logo" />
+								<a href="#main_section">главная</a>
+								<a href="#services_section">услуги</a>
+								<a href="#about-us_section">о нас</a>
+								<a href="#contact_section">контакты</a>
+							</div>
+						</header>
+						<div
+							class="main_content"
+							id="main_content"
+							data-base="2s"
+						>
+							<div class="container">
+								<div class="left_content main_content_inner">
+									<p>
+										63 <br />
+										Music
+									</p>
+								</div>
+								<div class="right_content main_content_inner">
+									<p>
+										Студия <br />
+										звукозаписи <br />
+										в Казани
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
+				<section class="services_section" id="services_section">
+					<div class="services">
+						<div
+							class="services_h1"
+							id="services_h1"
+							data-base="3s"
+						>
+							<h1>УСЛУГИ</h1>
+						</div>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="card-1 swiper-slide" name="mixing">
+									<div class="img_over">
+										<img
+											src="../img/card-1.jpg"
+											alt="Card 1"
+										/>
+									</div>
+									<div class="card_text">
+										<h2>СВЕДЕНИЕ</h2>
+										<h1>от 1500р</h1>
+									</div>
+								</div>
+								<div class="card-2 swiper-slide" name="record">
+									<div class="img_over">
+										<img
+											src="../img/card-2.jpg"
+											alt="Card 2"
+										/>
+									</div>
+									<div class="card_text">
+										<h2>ЗАПИСЬ</h2>
+										<h1>от 1500р</h1>
+									</div>
+								</div>
+								<div class="card-3 swiper-slide" name="rent">
+									<div class="img_over">
+										<img
+											src="../img/card-3.jpg"
+											alt="Card 3"
+										/>
+									</div>
+									<div class="card_text">
+										<h2>АРЕНДА СТУДИИ</h2>
+										<h1>от 1500р</h1>
+									</div>
+								</div>
+								<div class="card-4 swiper-slide" name="bit">
+									<div class="img_over">
+										<img
+											src="../img/card-4.jpg"
+											alt="Card 4"
+										/>
+									</div>
+									<div class="card_text">
+										<h2>БИТ</h2>
+										<h1>от 1500р</h1>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</section>
 
-            <section class="services_section" id="services_section">
-                <div class="services">
-                    <div class="services_h1" id="services_h1" data-base="3s">
-                        <h1>УСЛУГИ</h1>
-                    </div>
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="card-1 swiper-slide" name="mixing">
-                                <img src="../img/card-1.jpg" alt="Card 1">
-                                <div class="card_text">
-                                    <h2>СВЕДЕНИЕ</h2>
-                                    <h1>от 1500р</h1>
-                                </div>
-                            </div>
-                            <div class="card-2 swiper-slide" name="record">
-                                <img src="../img/card-2.jpg" alt="Card 2">
-                            </div>
-                            <div class="card-3 swiper-slide" name="rent">
-                            <img src="../img/card-3.jpg" alt="Card 3">
-                            </div>
-                            <div class="card-4 swiper-slide" name="bit">
-                            <img src="../img/card-4.jpg" alt="Card 4">
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                        
-                </div>
-            </section>
-            
-            <section class="about-us_section" id="about-us_section">
-                <div class="about-us">
-                    <h1 class="about-us_h1" id="about-us_h1">О НАС</h1>
-                    <div class="about-us_content">
-                        <div class="text_content" id="text_content">
-                            Non eiusmod mollit incididunt pariatur. Lorem sunt commodo sunt enim ut consequat ipsum ex deserunt labore mollit cupidatat dolor anim. Fugiat adipisicing labore adipisicing reprehenderit velit aliqua enim et deserunt fugiat minim sint nostrud ut. Non laboris occaecat ex occaecat duis cupidatat commodo.
+				<section class="about-us_section" id="about-us_section">
+					<div class="about-us">
+						<h1 class="about-us_h1" id="about-us_h1">О НАС</h1>
+						<div class="about-us_content">
+							<div class="text_content" id="text_content">
+								Non eiusmod mollit incididunt pariatur. Lorem
+								sunt commodo sunt enim ut consequat ipsum ex
+								deserunt labore mollit cupidatat dolor anim.
+								Fugiat adipisicing labore adipisicing
+								reprehenderit velit aliqua enim et deserunt
+								fugiat minim sint nostrud ut. Non laboris
+								occaecat ex occaecat duis cupidatat commodo.
+								Lorem in magna aliqua qui et mollit mollit
+								veniam sit aliquip proident. Cillum commodo non
+								amet velit duis cillum mollit magna enim. Enim
+								cupidatat magna quis amet.
+							</div>
+							<!--https://github.com/uglysixthree/63Music.git-->
+							<div
+								class="img_content"
+								id="img_content"
+								data-base="2s"
+							>
+								<img src="../img/card-3.jpg" alt="" srcset="" />
+							</div>
+						</div>
+					</div>
+				</section>
 
-Lorem in magna aliqua qui et mollit mollit veniam sit aliquip proident. Cillum commodo non amet velit duis cillum mollit magna enim. Enim cupidatat magna quis amet.
-                        </div>
-                        <!--https://github.com/uglysixthree/63Music.git-->
-                        <div class="img_content" id="img_content" data-base="2s">
-                            <img src="../img/card-3.jpg" alt="" srcset="">
-                        </div>
-                    </div>
-                </div>
-            </section>
+				<section class="contact_section" id="contact_section">
+					<div class="contact" id="contact">
+						<div class="contact_text"><h1>КОНТАКТЫ</h1></div>
+						<div class="contact_main">
+							<div class="path">
+								<iframe
+									src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae0bbae85b656c8b548d20219845ac502d1b5629cec2068d1ba6b98d5dfd6f1ff&amp;source=constructor"
+									width="100%"
+									height="100%"
+									frameborder="0"
+								></iframe>
+							</div>
+							<div class="contact_content">
+								<p>
+									<img
+										src="../img/map.svg"
+										alt="Icon"
+									/>Казань, ул. Чистопольская, д.64
+								</p>
+								<div class="links">
+									<a href="https://vk.com/63musiclabel"
+										><img
+											src="../img/vk.svg"
+											alt="Icon"
+										/>Вконтакте</a
+									>
+									<a href="https://t.me/music63label"
+										><img
+											src="../img/tg.svg"
+											alt="Icon"
+										/>Telegram</a
+									>
+								</div>
+								<button type="button">
+									ОСТАВИТЬ<br />ЗАЯВКУ
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
 
-
-            <section class="contact_section" id="contact_section">
-                <div class="contact" id="contact">
-                    <div class="contact_text"><h1>КОНТАКТЫ</h1></div>
-                    <div class="contact_main">
-                        <div class="path">
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae0bbae85b656c8b548d20219845ac502d1b5629cec2068d1ba6b98d5dfd6f1ff&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-                        </div>
-                        <div class="contact_content">
-                            <p><img src="../img/map.svg" alt="Icon">Казань, ул. Чистопольская, д.64</p>
-                            <div class="links">
-                                <a href="https://vk.com/63musiclabel"><img src="../img/vk.svg" alt="Icon">Вконтакте</a>
-                                <a href="https://t.me/music63label"><img src="../img/tg.svg" alt="Icon">Telegram</a>
-                            </div>
-                            <button type="button">ОСТАВИТЬ<br/>ЗАЯВКУ</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- <div id="myModal" class="modal">
+				<!-- <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="close-btn" id="closeModalBtn">&times;</span>
                     <h2>Заголовок модального окна</h2>
@@ -126,55 +206,53 @@ Lorem in magna aliqua qui et mollit mollit veniam sit aliquip proident. Cillum c
                     <button>Дополнительная кнопка</button>
                 </div>
             </div> -->
-              
-            <footer>
-                <div class="footer_content">
-                    <img src="../img/logo.png" class="footer-logo" alt="">
-                    <h1>63Music</h1>
-                    <a href="#main_section">главная</a>
-                    <a href="#services_section">услуги</a>
-                    <a href="#about-us_section">о нас</a>
-                    <a href="#contact_section">контакты</a>
-                </div>
-                <br>
-                <div class="footer_footer">
-                    <h3>ИП Шаталов Валерий Сергеевич</h3>
-                    <h4>ИНН 371857183</h4>
-                    <a href="#">Политика конфиденциальности</a>
-                    <a href="#">Правила оплаты и безопасность платежей</a>
-                </div>
-            </footer>
 
-        </div>
-        
-    </div>
-    
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <div class="modal_img">
-                <img src="../img/card-1.jpg" alt="">
-            </div>
-            <div class="modal-c1">
-                <span class="close-btn" id="closeModalBtn">&times;</span>
-                <div class="top_h">
-                    <h1 class="top_h1">СВЕДЕНИЕ</h1>
-                    <p class="top_p">оставьте заяву и мы свяжемся с вами</p>
-                </div>
-                <div class="input_block">
-                    <input type="text" placeholder="Имя:">
-                    <input type="text" placeholder="Номер телефона:">
-                    <input type="text" placeholder="EMail:">
-                </div>
-                <a href="#">ОСТАВИТЬ ЗАЯВКУ</a>
-            </div>
-        </div>
-    </div>
+				<footer>
+					<div class="footer_content">
+						<img src="../img/logo.png" class="footer-logo" alt="" />
+						<h1>63Music</h1>
+						<a href="#main_section">главная</a>
+						<a href="#services_section">услуги</a>
+						<a href="#about-us_section">о нас</a>
+						<a href="#contact_section">контакты</a>
+					</div>
+					<br />
+					<div class="footer_footer">
+						<h3>ИП Шаталов Валерий Сергеевич</h3>
+						<h4>ИНН 371857183</h4>
+						<a href="#">Политика конфиденциальности</a>
+						<a href="#">Правила оплаты и безопасность платежей</a>
+					</div>
+				</footer>
+			</div>
+		</div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="../js/script.js"></script>
-    <script src="../js/swiper.js"></script>
-    <script src="../js/about-us.js"></script>
-    <script src="../js/services.js"></script>
-    <script src="../js/modal.js"></script>
-</body>
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<div class="modal_img">
+					<img src="../img/card-1.jpg" alt="" />
+				</div>
+				<div class="modal-c1">
+					<span class="close-btn" id="closeModalBtn">&times;</span>
+					<div class="top_h">
+						<h1 class="top_h1">СВЕДЕНИЕ</h1>
+						<p class="top_p">оставьте заяву и мы свяжемся с вами</p>
+					</div>
+					<div class="input_block">
+						<input type="text" placeholder="Имя:" />
+						<input type="text" placeholder="Номер телефона:" />
+						<input type="text" placeholder="EMail:" />
+					</div>
+					<a href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="../js/script.js"></script>
+		<script src="../js/swiper.js"></script>
+		<script src="../js/about-us.js"></script>
+		<script src="../js/services.js"></script>
+		<script src="../js/modal.js"></script>
+	</body>
 </html>
